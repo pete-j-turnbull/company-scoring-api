@@ -97,7 +97,7 @@ module.exports.scoreCompany = function *() {
 			}
 		};
 
-		if (!companyNumber) companyNumber = yield getCompanyNumber(companyName);
+		if (!companyNumber) companyNumber = yield getCompanyNumber(baseOptions, companyName);
 
 		// Now we have a company number
 
